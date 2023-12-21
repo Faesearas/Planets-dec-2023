@@ -1,14 +1,14 @@
-import planetMath from '../src/js/planetMath.js';
+import PlanetMath from '../src/js/planetMath.js';
 
 describe('planetMath', () => {
-  let planetMath;
+  let userDate;
 
   beforeEach(() => {
-    userDate = new planetMath(35);
+    userDate = new PlanetMath(35);
   });
 
   test('should be able to display contents of the class object', () => {    
-    expect(userDate.int).toEqual(35);    
+    expect(userDate.num).toEqual(35);    
   });
 
 });
