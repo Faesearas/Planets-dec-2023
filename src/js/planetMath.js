@@ -1,8 +1,9 @@
-export default class planetMath {
-  constructor() {
-
+export default class PlanetMath {
+  constructor(num1,num2) {
+    this.num1 = num1;
+    this.num2 = num2;
   }
-  method() {
+  yearCompare() {
 
   }
 }
