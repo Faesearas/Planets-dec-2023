@@ -4,7 +4,7 @@ export default class PlanetMath {
     this.num2 = num2;
   }
   yearCompare() {
-
+    this.result = this.num2 - this.num1;
   }
 }
 
