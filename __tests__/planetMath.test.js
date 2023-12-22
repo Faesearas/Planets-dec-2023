@@ -4,10 +4,11 @@ describe('planetMath', () => {
   let userDate;
 
   beforeEach(() => {
-    userDate = new PlanetMath(35);
+    userDate = new PlanetMath(1965, 2000);
   });
 
-  test('should be able to display contents of the class object', () => {    
+  test('should display the difference between the two entered years', () => {    
+    userDate.yearCompare();
     expect(userDate.num).toEqual(35);    
   });
 
