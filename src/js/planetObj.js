@@ -1,10 +1,11 @@
 export default class PlanetObj{
     constructor () {
-        this.earth = 31558118400
-        this.ertDay = 86400000
+        this.ertYr = 31558118400;
+        this.ertDay = 86400000;
+        this.mer = this.ertDay * 87.97;
+        
     }
 }
-
 // mer = 87.97
 // ven = 224.70
 // mars = 686.98
