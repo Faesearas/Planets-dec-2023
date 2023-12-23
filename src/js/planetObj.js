@@ -1,7 +1,7 @@
 export default class PlanetObj{
     constructor () {
         this.earth = 31558118400
-
+        this.ertDay = 86400000
     }
 }
 
