@@ -1,11 +1,16 @@
+import PlanetObj from './planetObj.js';
+
 export default class PlanetMath {
-  constructor(num1,num2) {
-    this.num1 = num1;
-    this.num2 = num2;
+  constructor(date1,date2) {
+    this.date1 = Date.parse(date1);
+    this.date2 = Date.parse(date2);
+    // this.today = Date.now();
   }
+
   yearCompare() {
-    this.result = this.num2 - this.num1;
+    let temp = this.date2 - this.date1;
+    let planetObj = new PlanetObj();
+    let result = temp / planetObj.earth;
+    this.result = Math.round(result);
   }
 }
-
-
