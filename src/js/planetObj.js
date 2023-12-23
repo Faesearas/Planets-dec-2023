@@ -3,7 +3,7 @@ export default class PlanetObj{
         this.ertYr = 31558118400;
         this.ertDay = 86400000;
         this.mer = this.ertDay * 87.97;
-        
+        this.ven = this.ertDay * 224.7;
     }
 }
 // mer = 87.97

@@ -23,4 +23,7 @@ describe('planetMath', () => {
         expect(planetObj.ven).toEqual(19414080000);
     });
 
+    test('should display the orbital period in ms for Mars', () => {
+        expect(planetObj.mar).toEqual(19414080000);
+    });
 });
