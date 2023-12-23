@@ -6,7 +6,7 @@ describe('planetMath', () => {
   let planetObj;
 
   beforeEach(() => {
-    userDate = new PlanetMath("1981-01-01");
+    userDate = new PlanetMath("1981-12-20");
     planetObj = new PlanetObj();
   });
 
@@ -14,6 +14,9 @@ describe('planetMath', () => {
     userDate.yearCompare();
     expect(userDate.userAge).toEqual(42);    
   });
-
+  test('should display the difference between the entered date and now in martian orbital periods', () => {    
+    userDate.yearCompare();
+    expect(userDate.marAge).toEqual(unknown);    
+  });
 
 });
