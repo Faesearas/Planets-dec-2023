@@ -24,6 +24,22 @@ describe('planetMath', () => {
     });
 
     test('should display the orbital period in ms for Mars', () => {
-        expect(planetObj.mar).toEqual(19414080000);
+        expect(planetObj.mar).toEqual(59355072000);
+    });
+
+    test('should display the orbital period in ms for Jupiter', () => {
+        expect(planetObj.jup).toEqual(374355648000);
+    });
+
+    test('should display the orbital period in ms for Saturn', () => {
+        expect(planetObj.sat).toEqual(929292480000);
+    });
+
+    test('should display the orbital period in ms for Uranus', () => {
+        expect(planetObj.ura).toEqual(2651369760000);
+    });
+
+    test('should display the orbital period in ms for Neptune', () => {
+        expect(planetObj.nep).toEqual(5200418592000);
     });
 });
