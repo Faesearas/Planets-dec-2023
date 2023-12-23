@@ -6,13 +6,13 @@ describe('planetMath', () => {
   let planetObj;
 
   beforeEach(() => {
-    userDate = new PlanetMath("1965-01-01", "2000-01-01");
+    userDate = new PlanetMath("1981-01-01");
     planetObj = new PlanetObj();
   });
 
-  test('should display the difference between the two entered dates', () => {    
+  test('should display the difference between the entered date and now', () => {    
     userDate.yearCompare();
-    expect(userDate.result).toEqual(35);    
+    expect(userDate.userAge).toEqual(42);    
   });
 
 

@@ -8,7 +8,10 @@ describe('planetMath', () => {
     });
 
     test('should display a earth orbital period worth of milliseconds', () => {
-        expect(planetObj.earth).toEqual(31536000000);
+        expect(planetObj.earth).toEqual(31558118400);
+      });
+      test('should display a earth orbital period worth of milliseconds', () => {
+        expect(planetObj.ertDay).toEqual(86400000);
       });
 
 });
