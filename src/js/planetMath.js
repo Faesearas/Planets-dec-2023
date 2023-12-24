@@ -9,7 +9,8 @@ export default class PlanetMath {
   yearCompare() {
     this.bDay = this.now - this.date1;
     let planetObj = new PlanetObj();
-    let result = this.bDay / planetObj.earth;
+    let result = this.bDay / planetObj.ertYr;
     this.userAge = Math.floor(result);
+    this.marAge = (this.bDay / planetObj.mar).toFixed(2);
   }
 }
