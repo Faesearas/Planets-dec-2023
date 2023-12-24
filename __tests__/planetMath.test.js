@@ -14,9 +14,17 @@ describe('planetMath', () => {
     userDate.yearCompare();
     expect(userDate.userAge).toEqual(42);    
   });
-  test('should display the difference between the entered date and now in martian orbital periods', () => {    
+  test('should display the difference between the entered date and now, in martian orbital periods!', () => {    
     userDate.yearCompare();
-    expect(userDate.marAge).toEqual(unknown);    
+    expect(userDate.marAge).toEqual("22.34");
+  });
+  test('should display the difference between the entered date and now, in Mercury`s orbital periods!', () => {    
+    userDate.yearCompare();
+    expect(userDate.merAge).toEqual("?");
+  });
+  test('should display the difference between the entered date and now, in Venus` orbital periods!', () => {    
+    userDate.yearCompare();
+    expect(userDate.venAge).toEqual("?");
   });
 
 });
