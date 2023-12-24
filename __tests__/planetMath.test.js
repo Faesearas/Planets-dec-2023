@@ -32,22 +32,22 @@ describe('planetMath', () => {
 
   test('should display the difference between the entered date and now, in Jupiter`s orbital periods!', () => {    
     userDate.yearCompare();
-    expect(userDate.marAge).toEqual("?");
+    expect(userDate.jupAge).toEqual("3.54");
   });
 
   test('should display the difference between the entered date and now, in Saturn`s orbital periods!', () => {    
     userDate.yearCompare();
-    expect(userDate.merAge).toEqual("?");
+    expect(userDate.satAge).toEqual("1.43");
   });
 
   test('should display the difference between the entered date and now, in Uranus` orbital periods!', () => {    
     userDate.yearCompare();
-    expect(userDate.venAge).toEqual("?");
+    expect(userDate.uraAge).toEqual("0.50");
   });
 
   test('should display the difference between the entered date and now, in Neptune` orbital periods!', () => {    
     userDate.yearCompare();
-    expect(userDate.venAge).toEqual("?");
+    expect(userDate.nepAge).toEqual("0.25");
   });
 
 });

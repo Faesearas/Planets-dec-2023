@@ -14,5 +14,9 @@ export default class PlanetMath {
     this.marAge = (this.bDay / planetObj.mar).toFixed(2);
     this.merAge = (this.bDay / planetObj.mer).toFixed(2);
     this.venAge = (this.bDay / planetObj.ven).toFixed(2);
+    this.jupAge = (this.bDay / planetObj.jup).toFixed(2);
+    this.satAge = (this.bDay / planetObj.sat).toFixed(2);
+    this.uraAge = (this.bDay / planetObj.ura).toFixed(2);
+    this.nepAge = (this.bDay / planetObj.nep).toFixed(2);
   }
 }
