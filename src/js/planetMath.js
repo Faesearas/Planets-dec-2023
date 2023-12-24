@@ -12,5 +12,7 @@ export default class PlanetMath {
     let result = this.bDay / planetObj.ertYr;
     this.userAge = Math.floor(result);
     this.marAge = (this.bDay / planetObj.mar).toFixed(2);
+    this.merAge = (this.bDay / planetObj.mer).toFixed(2);
+    this.venAge = (this.bDay / planetObj.ven).toFixed(2);
   }
 }
