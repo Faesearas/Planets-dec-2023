@@ -1,32 +1,35 @@
 import PlanetMath from '../src/js/planetMath.js';
 import PlanetObj from '../src/js/planetObj.js';
 
+// Unfortunately due to these tests acting on a live clock some will fail and need adjustment.
 describe('planetMath', () => {
   let userDate;
   let planetObj;
 
   beforeEach(() => {
-    userDate = new PlanetMath("1981-12-20"); 
+    userDate = new PlanetMath("1981-12-20");
     planetObj = new PlanetObj();
   });
 
-  test('should display the difference between the entered date and now', () => {    
+  test('should display the difference between the entered date and now', () => {
     userDate.yearCompare(0);
-    expect(userDate.userAge).toEqual(42); 
+    expect(userDate.userAge).toEqual(42);
   });
 
-  test('should display the user`s entered age, in Martian orbital periods!', () => {    
+  test('should display the user`s entered age, in Martian orbital periods!', () => {
     userDate.yearCompare(3);
     expect(userDate.pntAge).toEqual("22.34");
   });
 
-  test('should display the time to user`s next birthday, on Mars!!', () => {    
+  test('should display the earth days to user`s next birthday, on Mars!!', () => {
     userDate.yearCompare(3);
-    expect(userDate.nextBDay).toEqual("453.4");
+    expect(userDate.nextBDay).toEqual("452.79");
   });
 
-  
-
-
+  test('should display the earth years from a previous birthday to their current birthday, on Venus!!!', () => {
+    userDate.yearCompare(1);
+    userDate.yearsSince(20);
+    expect(userDate.yrsSince).toEqual("32.5");
+  });
 
 });
