@@ -20,6 +20,11 @@ export default class PlanetMath {
     planetObj.currPnt(num2);
     this.bDay = this.now - this.date1;
     this.yrsSince = ((this.bDay - (num1 * 31558118400)) / planetObj.currPnt).toFixed(1);
-
+  }
+  yearsUntil (num1, num2) {
+    let planetObj = new PlanetObj();
+    planetObj.currPnt(num2);
+    this.bDay = this.now - this.date1;
+    this.yrsUntil = (((num1 * 31558118400) - this.bDay) / planetObj.currPnt).toFixed(1);
   }
 }
