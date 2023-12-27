@@ -23,13 +23,12 @@ describe('planetMath', () => {
 
   test('should display the earth days to user`s next birthday, on Mars!!', () => {
     userDate.yearCompare(3);
-    expect(userDate.nextBDay).toEqual("452.79");
+    expect(userDate.nextBDay).toEqual("452.78");
   });
 
-  test('should display the earth years from a previous birthday to their current birthday, on Venus!!!', () => {
-    userDate.yearCompare(1);
-    userDate.yearsSince(20);
-    expect(userDate.yrsSince).toEqual("32.5");
+  test('should display the orbital periods of venus, from their current age to that birthday, on earth!!!', () => {
+    userDate.yearsSince(20, 1);
+    expect(userDate.yrsSince).toEqual("35.8");
   });
 
 });

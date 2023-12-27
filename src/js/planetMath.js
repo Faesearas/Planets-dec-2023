@@ -11,16 +11,15 @@ export default class PlanetMath {
     let planetObj = new PlanetObj();
     let result = this.bDay / planetObj.ertYr;
     this.userAge = Math.floor(result);
-    planetObj.currPnt(num)
+    planetObj.currPnt(num);
     this.pntAge = (this.bDay / planetObj.currPnt).toFixed(2);
+    this.nextBDay = (((parseInt(this.bDay / planetObj.currPnt + 1) - this.bDay / planetObj.currPnt) * planetObj.currPnt) / planetObj.ertDay).toFixed(2);
+  }
+  yearsSince (num1, num2) {
+    let planetObj = new PlanetObj();
+    planetObj.currPnt(num2);
+    this.bDay = this.now - this.date1;
+    this.yrsSince = ((this.bDay - (num1 * 31558118400)) / planetObj.currPnt).toFixed(1);
+
   }
 }
-
-
-// this.marAge = (this.bDay / planetObj.mar).toFixed(2);
-// this.merAge = (this.bDay / planetObj.mer).toFixed(2);
-// this.venAge = (this.bDay / planetObj.ven).toFixed(2);
-// this.jupAge = (this.bDay / planetObj.jup).toFixed(2);
-// this.satAge = (this.bDay / planetObj.sat).toFixed(2);
-// this.uraAge = (this.bDay / planetObj.ura).toFixed(2);
-// this.nepAge = (this.bDay / planetObj.nep).toFixed(2);
