@@ -1,7 +1,7 @@
-# Planetary Cycle difference calculator
+# Orbital Period difference calculator
 <img src="./Ceres.jpg" align="right" alt="The Dwarf planet Ceres with 3/4 of it's visible surface shown" width="255" height="255">
 
-#### This displays the differences of orbital periods of planets.
+#### This program displays the differences of orbital periods of planets.
 
 #### By Amy Hruska
 
@@ -14,11 +14,10 @@
 * _babel_
 * _Webpack_
 * _npm_
-* _etc_
 
 ## Description
 
-Some vague information like how it's supposed take two numbers and apply math to them to make something based on orbital periods of planets ig? I'll write something better. 
+This program takes a user's input date and compares it to the current time and planet selection and displays the differences between them. 
 
 ## Setup/Installation Requirements
 
@@ -27,11 +26,11 @@ In git bash:
 $ git clone https://github.com/AmyHruska/Planets-dec-2023.git
 $ cd planets-dec-2023
 $ npm install
-$ npm start
+$ npm build
 ````
 ## Known Issues
 
-* _All known issues are known._
+* _Some tests are very time sensitive._
 
 ## License
 
