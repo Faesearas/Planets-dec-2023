@@ -15,9 +15,18 @@ describe('planetMath', () => {
     expect(userDate.userAge).toEqual(42); 
   });
 
-  test('should display the user`s entered age, in martian orbital periods!', () => {    
+  test('should display the user`s entered age, in Martian orbital periods!', () => {    
     userDate.yearCompare(3);
     expect(userDate.pntAge).toEqual("22.34");
   });
+
+  test('should display the time to user`s next birthday, on Mars!!', () => {    
+    userDate.yearCompare(3);
+    expect(userDate.nextBDay).toEqual("453.4");
+  });
+
+  
+
+
 
 });
