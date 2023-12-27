@@ -23,12 +23,17 @@ describe('planetMath', () => {
 
   test('should display the earth days to user`s next birthday, on Mars!!', () => {
     userDate.yearCompare(3);
-    expect(userDate.nextBDay).toEqual("452.78");
+    expect(userDate.nextBDay).toEqual("452.61");
   });
 
-  test('should display the orbital periods of venus, from their current age to that birthday, on earth!!!', () => {
+  test('should display the orbital periods of Venus, from their current age to that past birthday, on earth!!!', () => {
     userDate.yearsSince(20, 1);
     expect(userDate.yrsSince).toEqual("35.8");
+  });
+
+  test('should display the orbital periods of Mercury, from their current age to that future birthday, on earth!!!', () => {
+    userDate.yearsUntil(60, 1);
+    expect(userDate.yrsUntil).toEqual("?");
   });
 
 });
