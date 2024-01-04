@@ -9,6 +9,8 @@ describe('planetMath', () => {
   beforeEach(() => {
     userDate = new PlanetMath("1981-12-20");
     planetObj = new PlanetObj();
+    jest.useFakeTimers("modern");
+    jest.setSystemTime(new Date(1704393094065));
   });
 
   test('should display the difference between the entered date and now', () => {
@@ -18,12 +20,12 @@ describe('planetMath', () => {
 
   test('should display the user`s entered age, in Martian orbital periods!', () => {
     userDate.yearCompare(3);
-    expect(userDate.pntAge).toEqual("22.34");
+    expect(userDate.pntAge).toEqual("22.35");
   });
 
   test('should display the earth days to user`s next birthday, on Mars!!', () => {
     userDate.yearCompare(3);
-    expect(userDate.nextBDay).toEqual("452.60");
+    expect(userDate.nextBDay).toEqual("444.77");
   });
 
   test('should display the orbital periods of Venus, from their current age to that past birthday, on earth!!!', () => {
