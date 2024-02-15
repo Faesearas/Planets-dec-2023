@@ -2,11 +2,33 @@
 <html>
 
 <head>
-  <title>Planet date calculator?</title>
+  <title>Planet age calculator?</title>
+  <link rel="icon" href="./favicon.ico">
 </head>
-
 <body>
-  
+  <Div>
+  <form id="planetCalc">
+  <label for="length1">Please enter a date to calculate the time frame from then and now on the selected planet</label>
+<input id="inputDate" type="date">
+<select id="inputPlanet">
+  <option value="0">Mercury</option>
+  <option value="1">Venus</option>
+  <option value="2">Earth</option>
+  <option value="3">Mars</option>
+  <option value="4">Jupiter</option>
+  <option value="5">Saturn</option>
+  <option value="6">Uranus</option>
+  <option value="7">Neptune</option>
+</select>
+<button type="submit" id="calc">Submit</button>
+</form>
+</Div>
+<div id="Result">
+  <p>Result:
+  </p>
+  <p>Age on Earth planet:<span id="earthResult"></span></p>
+  <p>Age on selected planet:<span id="selectionResult"></span></p>
+</div>
 </body>
 
 </html>
