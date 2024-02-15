@@ -3,7 +3,7 @@
 
 #### This program displays the differences of orbital periods of planets.
 
-#### By Amy Hruska
+#### By Amy
 
 ## Technologies Used
 
@@ -23,7 +23,7 @@ This program takes a user's input date and compares it to the current time and p
 
 In git bash:
 ````bash
-$ git clone https://github.com/AmyHruska/Planets-dec-2023.git
+$ git clone https://github.com/faesearas/Planets-dec-2023.git
 $ cd planets-dec-2023
 $ npm install
 $ npm build
